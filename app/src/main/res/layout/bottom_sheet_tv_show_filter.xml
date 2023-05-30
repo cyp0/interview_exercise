@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:text="Filter Tv Shows"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"/>
+
+    <RadioGroup
+        android:id="@+id/rgSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <RadioButton
+            android:id="@+id/rbPopularityAsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popularity Desc"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbPopularityDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popularity Asc"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbVoteCountDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vote Count Desc"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbVoteCountAsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vote Count Asc"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            />
+
+    </RadioGroup>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
